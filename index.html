@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <title>Room Chat</title>
+  </head>
+
+  <body>
+    <div class="container-fluid h-100" id="messageArea">
+      <div class="row justify-content-center h-100">
+        <div class="col-md-10 col-xl-6 chat">
+          <div class="card">
+            <div class="card-header msg_head">
+              <div class="d-flex bd-highlight">
+                <div class="user_info">
+                  <span> Room Chat</span>
+                  <p>by Bancha Thokaew</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body msg_card_body" id="messagewindow">
+              <ul class="messages">
+              </ul>
+            </div>
+            <div class="card-footer">
+              <form id="messageForm">
+                <div class="input-group">
+                  <input type="text" class="form-control type_msg" name="" placeholder="Type your message..." required="required" id="message" autofocus />
+                  <div class="input-group-append">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-xl-2 chat">
+          <div class="card mb-sm-3 mb-md-0 contacts_card">
+            <div class="card-header" align="center">
+              <span class="">ONLINE</span>
+            </div>
+            <div class="card-body contacts_body">
+              <ui class="contacts" id="users">
+              </ui>
+            </div>
+            <div class="card-footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="login " id="userFormArea">
+      <h1>Room Chat</h1>
+      <form id="userForm">
+        <input type="text" name="" placeholder="What's your name" required="required" id="username" maxlength="14" autofocus />
+      </form>
+    </div>
+  </body>
+
+</html>
